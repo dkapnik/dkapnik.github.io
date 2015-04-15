@@ -1,0 +1,10 @@
+Fonts used in this design;
+
+Font: Bebas-Neue, 
+Author: Dharma Type, 
+Url: http://www.fontsquirrel.com/fonts/bebas-neue;
+
+Font: Amble, 
+Author: Punchcut, 
+Url: http://www.fontsquirrel.com/fonts/amble;
+

@@ -1,0 +1,17 @@
+@keyframes pretty {
+    0% {left: 100%;}
+    20% {left: -20px;}
+    40% {left: 20px;}
+    60% {left: -10px}
+    80% {left: 10px;}
+    100% {left: 100%;}
+}
+
+//animation: pretty 555ms infinite; //if you only want it to happen once, then just put in the number "1". Can also say "reverse" on a different tag if you want two different lines going in different directions. The "animation" would go under the tag. 
+
+@keyframes rotate {
+    0% {transform: rotate(720deg);}
+    100% {transform: rotate(0deg);}
+}
+
+//animation: rotate 555ms infinite; //

@@ -1,0 +1,39 @@
+// Columns & Row
+.row {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  @include clearfix; // Using the clearfix mixin
+}
+
+.column {
+  float: left;
+  margin-right: 2%;
+
+&.one-whole { width: 100%; }
+&.one-half { width: 49%; } /* 100% - 1 gutter = 98% / 2 columns = 49% */
+&.one-third {	width: 32%; } /* 100% - 2 gutters = 96% / 3 columns = 32% */
+&.two-third { width: 66%; } /* (32 * 2) + (1 * 2) = 66% */
+&.one-fourth { width: 23.5%; } /* 100% - 3 gutters = 94% / 4 columns = 23.5% */
+&.three-fourth { width: 74.5%; } /* (23.5 * 3) + (2 * 2) = 66% */
+&.one-fifth {	width: 18.4%; } /* 100% - 4 gutters = 92% / 5 columns = 18.4% */
+&.two-fifth { width: 38.8%; } /* (18.4 * 2) + (1 * 2) = 38.8% */
+&.three-fifth { width: 59.2%; } /* (18.4 * 3) + (2 * 2) = 59.2% */
+&.four-fifth { width: 79.6%; } /* (18.4 * 4) + (3 * 2) = 79.6% */
+&.one-sixth {	width: 15%; } /* 100% - 5 gutters = 90% / 6 columns = 15% */
+&.one-seventh {	width: 12.5714%; } /* 100% - 6 gutters = 88% / 7 columns = 12.5714% */
+&.one-eighth {	width: 10.75%; } /* 100% - 7 gutters = 86% / 8 columns = 10.75% */
+
+  // The last column in the row
+  &:last-of-type {
+    margin-right: 0;
+  }
+    
+
+
+  // Responsive styles
+  @media (max-width: $tablet) {
+    width: 100% !important;
+    margin-right: 0;
+  }
+}

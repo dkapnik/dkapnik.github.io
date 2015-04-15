@@ -1,0 +1,24 @@
+
+// Create some color variables
+$dark-blue: #3c7391;
+$light-blue: #eaf4f4;
+$green: #C5EFCB;
+$light-green: lighten($green, 10%);
+$dark-gray: #595758;
+$light-gray: lighten($dark-gray, 50%);
+$red: #DB2B39;
+
+// Create variables and define them as other variables
+$link-color: $dark-gray;
+$link-color_hover: $red;
+
+
+// Create variable for responsive breakpoints
+$tablet: 800px;
+
+
+$font: 'Roboto', sans-serif;
+$font-md: 'Roboto Condensed', sans-serif;
+$font-lg: 'Alegreya', serif;
+$font-sm: 'Alegreya', serif;
+

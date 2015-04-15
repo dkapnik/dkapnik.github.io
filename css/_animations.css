@@ -1,0 +1,1 @@
+@keyframes pretty{0%{left:100%}20%{left:-20px}40%{left:20px}60%{left:-10px}80%{left:10px}100%{left:100%}}@keyframes rotate{0%{transform:rotate(720deg)}100%{transform:rotate(0deg)}}

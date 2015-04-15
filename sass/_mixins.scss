@@ -1,0 +1,64 @@
+
+// Create Clearfix Mixin
+@mixin clearfix {
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+
+// Create Ease Mixin
+@mixin ease($time: 333ms) {
+  transition: $time all ease-in-out;
+}
+
+
+
+// Breakpoint
+@mixin breakpoint($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+// Background Image
+@mixin background-image($behavior: fixed) {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: $behavior !important;
+
+    // Attachment scroll on mobile and unsupported browsers
+    html.touch & { 
+        background-attachment: scroll !important; 
+    }
+}
+
+// Font mixins
+@mixin font-lg($font-lg) {
+    font-weight: 700;
+    line-height: 46px;
+    font-size: 46px;
+    margin: 0 0 43px 0;
+    }
+@mixin font-md($font-md) {
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 23px 0;
+    }
+@mixin font($font) {
+    font-size: 15px;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+    }
